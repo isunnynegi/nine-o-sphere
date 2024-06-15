@@ -1,93 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coming Soon</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #a68e0d, #211e1e);
+        }
 
-  .content {
-    text-align: center;
-    color: #333;
-    position: relative;
-  }
+        .content {
+            text-align: center;
+            color: #fff;
+            position: relative;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 80%;
+        }
 
-  .logo {
-    max-width: 200px;
-    margin-bottom: 40px;
-  }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 40px;
+        }
 
-  h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
 
-  p {
-    font-size: 1.5em;
-    margin-bottom: 40px;
-  }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
 
-  .countdown {
-    font-size: 2em;
-    color: #666;
-  }
+        .countdown {
+            font-size: 2em;
+            color: #ccc;
+            margin-top: 20px;
+        }
 
-  @keyframes blink {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
-  }
+        @keyframes blink {
 
-  .blink {
-    animation: blink 1s infinite;
-  }
-</style>
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="content">
-    <img src="logo.png" alt="Logo" class="logo">
-    <h1>Coming Soon</h1>
-    <p>We're working on something awesome!</p>
-    <div class="countdown blink">Launching in</div>
-    <div id="countdown"></div>
-  </div>
+    <div class="content">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Coming Soon</h1>
+        <p>We're working on something!</p>
+        <div class="countdown blink">Launching in</div>
+        <div id="countdown"></div>
+    </div>
 
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("June 30, 2024 23:59:59").getTime();
 
-    // Update the countdown every 1 second
-    var x = setInterval(function() {
-      // Get today's date and time
-      var now = new Date().getTime();
-      
-      // Find the distance between now and the countdown date
-      var distance = countDownDate - now;
-      
-      // Calculate days, hours, minutes, and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      // Display the countdown timer
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-      
-      // If the countdown is over, display text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  </script>
+        // Update the countdown every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the countdown date
+            var distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown timer
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </body>
+
 </html>
