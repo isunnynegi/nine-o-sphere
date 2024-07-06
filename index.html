@@ -1,108 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(to bottom right, #a68e0d, #211e1e);
-        }
-
-        .content {
-            text-align: center;
-            color: #fff;
-            position: relative;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            max-width: 80%;
-        }
-
-        .logo {
-            max-width: 150px;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-        }
-
-        .countdown {
-            font-size: 2em;
-            color: #ccc;
-            margin-top: 20px;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-        }
-
-        .blink {
-            animation: blink 1s infinite;
-        }
-    </style>
+  <title>Nine-O-Sphere</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-    <div class="content">
-        <img src="logo.png" alt="Logo" class="logo">
-        <h1>Coming Soon</h1>
-        <p>We're working on something!</p>
-        <div class="countdown blink">Launching in</div>
-        <div id="countdown"></div>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="https://www.nine-o-sphere.com">
+    <img src="assets/img/logo.png" alt="Nine-O-Sphere">
+  </a>
+  <p class="device-notification--message">Nine-O-Sphere has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="https://www.nine-o-sphere.com">
+            <img src="assets/img/logo.png" alt="Nine-O-Sphere">
+          </a>
+          <button class="header--cta cta">Contact Us</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Works</span></li>
+            <li><span>About</span></li>
+            <li><span>Contact</span></li>
+            <li><span>Contact us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Empowering <br>Minds Through<br> Mathematics!</h1>
+                <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/introduction-visual.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="javascript:void(0);">
+                  <h3>Metiew &amp; Smith</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+                <a href="javascript:void(0);">
+                  <h3>Fantasy interactive</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+                <a href="javascript:void(0);">
+                  <h3>Paul &amp; shark</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="javascript:void(0);">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-victory.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Victory</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="javascript:void(0);">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Metiew &amp; Smith</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="javascript:void(0);">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Alex Nowak</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>We<br>believe in<br>passionate<br>people</h2>
+                <a href="javascript:void(0);">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="assets/img/about-visual.png" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="javascript:void(0);">
+                  <h3>Winners</h3>
+                </a>
+                <a href="javascript:void(0);">
+                  <h3>Philosophy</h3>
+                </a>
+                <a href="javascript:void(0);">
+                  <h3>History</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Panchkula, Haryana</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+919988388559">+91 998 838 8559</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="javascript:void(0);">LinkedIn</a></li>
+                    <li><a href="javascript:void(0);">Youtube.com</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Works</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</div>
 
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("June 30, 2024 23:59:59").getTime();
-
-        // Update the countdown every 1 second
-        var x = setInterval(function () {
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the countdown date
-            var distance = countDownDate - now;
-
-            // Calculate days, hours, minutes, and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the countdown timer
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-            // If the countdown is over, display text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
 </body>
-
 </html>
